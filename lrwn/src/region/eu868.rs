@@ -161,7 +161,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: true,
-                            modulation: DataRateModulation::Fsk(FskDataRate { bitrate: 50000 }),
+                            modulation: DataRateModulation::Fsk(FskDataRate { bitrate: 200000 }),
                         },
                     ),
                 ]
