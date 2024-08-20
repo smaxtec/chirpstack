@@ -99,7 +99,7 @@ async fn test_downlink_scheduler() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
         ..Default::default()

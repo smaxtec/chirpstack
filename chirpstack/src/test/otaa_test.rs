@@ -188,7 +188,7 @@ async fn test_gateway_filtering() {
                     }),
                     rx1_delay: 1,
                     rx2_frequency: 869525000,
-                    enabled_uplink_channel_indices: vec![0, 1, 2],
+                    enabled_uplink_channel_indices: vec![0, 1, 2, 3],
                     nb_trans: 1,
                     region_config_id: "eu868".to_string(),
                     class_b_ping_slot_nb: 1,
@@ -429,7 +429,7 @@ async fn test_lorawan_10() {
                         }),
                         rx1_delay: 1,
                         rx2_frequency: 869525000,
-                        enabled_uplink_channel_indices: vec![0, 1, 2],
+                        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
                         nb_trans: 1,
                         region_config_id: "eu868".to_string(),
                         class_b_ping_slot_nb: 1,
@@ -622,7 +622,7 @@ async fn test_lorawan_10() {
                     }),
                     rx1_delay: 1,
                     rx2_frequency: 869525000,
-                    enabled_uplink_channel_indices: vec![0, 1, 2],
+                    enabled_uplink_channel_indices: vec![0, 1, 2, 3],
                     nb_trans: 1,
                     region_config_id: "eu868".to_string(),
                     skip_f_cnt_check: true,
@@ -669,10 +669,10 @@ async fn test_lorawan_10() {
                         }),
                         rx1_delay: 1,
                         rx2_frequency: 869525000,
-                        enabled_uplink_channel_indices: vec![0, 1, 2, 3, 4, 5, 6, 7],
+                        enabled_uplink_channel_indices: vec![0, 1, 2, 3, 4, 5, 6, 7, 8],
                         extra_uplink_channels: [
                             (
-                                3,
+                                4,
                                 internal::DeviceSessionChannel {
                                     frequency: 867100000,
                                     min_dr: 0,
@@ -680,7 +680,7 @@ async fn test_lorawan_10() {
                                 },
                             ),
                             (
-                                4,
+                                5,
                                 internal::DeviceSessionChannel {
                                     frequency: 867300000,
                                     min_dr: 0,
@@ -688,7 +688,7 @@ async fn test_lorawan_10() {
                                 },
                             ),
                             (
-                                5,
+                                6,
                                 internal::DeviceSessionChannel {
                                     frequency: 867500000,
                                     min_dr: 0,
@@ -696,7 +696,7 @@ async fn test_lorawan_10() {
                                 },
                             ),
                             (
-                                6,
+                                7,
                                 internal::DeviceSessionChannel {
                                     frequency: 867700000,
                                     min_dr: 0,
@@ -704,7 +704,7 @@ async fn test_lorawan_10() {
                                 },
                             ),
                             (
-                                7,
+                                8,
                                 internal::DeviceSessionChannel {
                                     frequency: 867900000,
                                     min_dr: 0,
@@ -1050,7 +1050,7 @@ async fn test_lorawan_11() {
                         }),
                         rx1_delay: 1,
                         rx2_frequency: 869525000,
-                        enabled_uplink_channel_indices: vec![0, 1, 2],
+                        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
                         nb_trans: 1,
                         region_config_id: "eu868".to_string(),
                         class_b_ping_slot_nb: 1,
