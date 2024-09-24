@@ -156,6 +156,14 @@ impl Configuration {
                             }),
                         },
                     ),
+                    (
+                        12,
+                        DataRate {
+                            uplink: true,
+                            downlink: true,
+                            modulation: DataRateModulation::Fsk(FskDataRate { bitrate: 200000 }),
+                        },
+                    ),
                 ]
                 .iter()
                 .cloned()
@@ -175,6 +183,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 230, n: 222 }),
                                     (6, MaxPayloadSize { m: 230, n: 222 }),
                                     (7, MaxPayloadSize { m: 230, n: 222 }),
+                                    (12, MaxPayloadSize { m: 230, n: 222 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -197,6 +206,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 230, n: 222 }),
                                     (6, MaxPayloadSize { m: 230, n: 222 }),
                                     (7, MaxPayloadSize { m: 230, n: 222 }),
+                                    (12, MaxPayloadSize { m: 230, n: 222 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -219,6 +229,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 230, n: 222 }),
                                     (6, MaxPayloadSize { m: 230, n: 222 }),
                                     (7, MaxPayloadSize { m: 230, n: 222 }),
+                                    (12, MaxPayloadSize { m: 230, n: 222 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -241,6 +252,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 230, n: 222 }),
                                     (6, MaxPayloadSize { m: 230, n: 222 }),
                                     (7, MaxPayloadSize { m: 230, n: 222 }),
+                                    (12, MaxPayloadSize { m: 230, n: 222 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -263,6 +275,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 230, n: 222 }),
                                     (6, MaxPayloadSize { m: 230, n: 222 }),
                                     (7, MaxPayloadSize { m: 230, n: 222 }),
+                                    (12, MaxPayloadSize { m: 230, n: 222 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -286,6 +299,7 @@ impl Configuration {
                                         (5, MaxPayloadSize { m: 230, n: 222 }),
                                         (6, MaxPayloadSize { m: 230, n: 222 }),
                                         (7, MaxPayloadSize { m: 230, n: 222 }),
+                                        (12, MaxPayloadSize { m: 230, n: 222 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -302,6 +316,7 @@ impl Configuration {
                                         (5, MaxPayloadSize { m: 230, n: 222 }),
                                         (6, MaxPayloadSize { m: 230, n: 222 }),
                                         (7, MaxPayloadSize { m: 230, n: 222 }),
+                                        (12, MaxPayloadSize { m: 230, n: 222 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -322,6 +337,7 @@ impl Configuration {
                                         (9, MaxPayloadSize { m: 123, n: 115 }),
                                         (10, MaxPayloadSize { m: 58, n: 50 }),
                                         (11, MaxPayloadSize { m: 123, n: 115 }),
+                                        (12, MaxPayloadSize { m: 230, n: 222 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -350,6 +366,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 250, n: 242 }),
                                     (6, MaxPayloadSize { m: 250, n: 242 }),
                                     (7, MaxPayloadSize { m: 250, n: 242 }),
+                                    (12, MaxPayloadSize { m: 250, n: 242 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -372,6 +389,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 250, n: 242 }),
                                     (6, MaxPayloadSize { m: 250, n: 242 }),
                                     (7, MaxPayloadSize { m: 250, n: 242 }),
+                                    (12, MaxPayloadSize { m: 250, n: 242 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -394,6 +412,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 250, n: 242 }),
                                     (6, MaxPayloadSize { m: 250, n: 242 }),
                                     (7, MaxPayloadSize { m: 250, n: 242 }),
+                                    (12, MaxPayloadSize { m: 250, n: 242 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -416,6 +435,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 250, n: 242 }),
                                     (6, MaxPayloadSize { m: 250, n: 242 }),
                                     (7, MaxPayloadSize { m: 250, n: 242 }),
+                                    (12, MaxPayloadSize { m: 250, n: 242 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -438,6 +458,7 @@ impl Configuration {
                                     (5, MaxPayloadSize { m: 250, n: 242 }),
                                     (6, MaxPayloadSize { m: 250, n: 242 }),
                                     (7, MaxPayloadSize { m: 250, n: 242 }),
+                                    (12, MaxPayloadSize { m: 250, n: 242 }),
                                 ]
                                 .iter()
                                 .cloned()
@@ -461,6 +482,7 @@ impl Configuration {
                                         (5, MaxPayloadSize { m: 250, n: 242 }),
                                         (6, MaxPayloadSize { m: 250, n: 242 }),
                                         (7, MaxPayloadSize { m: 250, n: 242 }),
+                                        (12, MaxPayloadSize { m: 250, n: 242 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -477,6 +499,7 @@ impl Configuration {
                                         (5, MaxPayloadSize { m: 250, n: 242 }),
                                         (6, MaxPayloadSize { m: 250, n: 242 }),
                                         (7, MaxPayloadSize { m: 250, n: 242 }),
+                                        (12, MaxPayloadSize { m: 250, n: 242 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -497,6 +520,7 @@ impl Configuration {
                                         (9, MaxPayloadSize { m: 123, n: 115 }),
                                         (10, MaxPayloadSize { m: 58, n: 50 }),
                                         (11, MaxPayloadSize { m: 123, n: 115 }),
+                                        (12, MaxPayloadSize { m: 250, n: 242 }),
                                     ]
                                     .iter()
                                     .cloned()
@@ -525,6 +549,7 @@ impl Configuration {
                     (9, vec![2, 1, 0, 0, 0, 0]),
                     (10, vec![1, 0, 0, 0, 0, 0]),
                     (11, vec![2, 1, 0, 0, 0, 0]),
+                    (12, vec![5, 5, 5, 4, 3, 2]),
                 ]
                 .iter()
                 .cloned()
@@ -552,6 +577,13 @@ impl Configuration {
                         enabled: true,
                         user_defined: false,
                     },
+                    Channel {
+                        frequency: 868600000,
+                        min_dr: 12,
+                        max_dr: 12,
+                        enabled: true,
+                        user_defined: false,
+                    },
                 ],
                 downlink_channels: vec![
                     Channel {
@@ -572,6 +604,13 @@ impl Configuration {
                         frequency: 868500000,
                         min_dr: 0,
                         max_dr: 5,
+                        enabled: true,
+                        user_defined: false,
+                    },
+                    Channel {
+                        frequency: 868600000,
+                        min_dr: 12,
+                        max_dr: 12,
                         enabled: true,
                         user_defined: false,
                     },
@@ -844,7 +883,7 @@ mod tests {
     #[test]
     fn get_user_defined_uplink_channel_indices() {
         assert_eq!(
-            vec![3, 4, 5, 6, 7],
+            vec![4, 5, 6, 7, 8],
             config_with_user_channels().get_user_defined_uplink_channel_indices()
         );
     }
@@ -864,7 +903,7 @@ mod tests {
             Test {
                 device_channels: vec![],
                 disabled_channels: vec![],
-                expected_uplink_channels: vec![0, 1, 2],
+                expected_uplink_channels: vec![0, 1, 2, 3],
                 expected_link_adr_req_payloads: vec![LinkADRReqPayload {
                     dr: 0,
                     tx_power: 0,
@@ -872,15 +911,15 @@ mod tests {
                         ch_mask_cntl: 0,
                         nb_rep: 0,
                     },
-                    ch_mask: ChMask::from_slice(&[true, true, true]).unwrap(),
+                    ch_mask: ChMask::from_slice(&[true, true, true, true]).unwrap(),
                 }],
             },
             // Base channels are active
             // Do not activate the CFList channels as we don't now if the node knows about these frequencies.
             Test {
-                device_channels: vec![0, 1, 2],
+                device_channels: vec![0, 1, 2, 3],
                 disabled_channels: vec![],
-                expected_uplink_channels: vec![0, 1, 2],
+                expected_uplink_channels: vec![0, 1, 2, 3],
                 expected_link_adr_req_payloads: vec![],
             },
             // Base channels + two CFList channels are active
@@ -895,9 +934,9 @@ mod tests {
             // network.
             // We disable the CFList channels as they became inactive.
             Test {
-                device_channels: vec![0, 1, 2, 3, 4, 5, 6, 7],
-                disabled_channels: vec![3, 4, 5, 6, 7],
-                expected_uplink_channels: vec![0, 1, 2],
+                device_channels: vec![0, 1, 2, 3, 4, 5, 6, 7, 8],
+                disabled_channels: vec![4, 5, 6, 7, 8],
+                expected_uplink_channels: vec![0, 1, 2, 3],
                 expected_link_adr_req_payloads: vec![LinkADRReqPayload {
                     dr: 0,
                     tx_power: 0,
@@ -905,7 +944,7 @@ mod tests {
                         ch_mask_cntl: 0,
                         nb_rep: 0,
                     },
-                    ch_mask: ChMask::from_slice(&[true, true, true]).unwrap(),
+                    ch_mask: ChMask::from_slice(&[true, true, true, true]).unwrap(),
                 }],
             },
         ];
@@ -938,6 +977,7 @@ mod tests {
             (false, 868100000),
             (false, 868300000),
             (false, 868500000),
+            (false, 868600000),
             (true, 867100000),
             (true, 867300000),
             (true, 867500000),
@@ -957,6 +997,7 @@ mod tests {
             (3, 868100000),
             (3, 868300000),
             (3, 868500000),
+            (12, 868600000),
             (3, 867100000),
             (3, 867300000),
             (3, 867500000),

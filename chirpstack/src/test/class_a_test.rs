@@ -304,7 +304,7 @@ async fn test_region_config_id_filtering() {
         nwk_s_enc_key: vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
         f_cnt_up: 7,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -804,7 +804,7 @@ async fn test_lorawan_10_skip_f_cnt() {
         nwk_s_enc_key: vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         skip_f_cnt_check: true,
@@ -1131,7 +1131,7 @@ async fn test_lorawan_10_uplink() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -1760,7 +1760,7 @@ async fn test_lorawan_10_end_to_end_enc() {
         js_session_key_id: vec![1, 2, 3],
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -1779,7 +1779,7 @@ async fn test_lorawan_10_end_to_end_enc() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -2097,7 +2097,7 @@ async fn test_lorawan_11_uplink() {
         f_cnt_up: 8,
         n_f_cnt_down: 5,
         conf_f_cnt: 4,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -2335,7 +2335,7 @@ async fn test_lorawan_10_rx_delay() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
         rx1_delay: 3,
@@ -2780,7 +2780,7 @@ async fn test_lorawan_10_mac_commands() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
         rx1_delay: 1,
@@ -3145,7 +3145,7 @@ async fn test_lorawan_11_mac_commands() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
         rx1_delay: 1,
@@ -3339,7 +3339,7 @@ async fn test_lorawan_10_device_queue() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx1_delay: 1,
         rx2_frequency: 869525000,
         region_config_id: "eu868".into(),
@@ -3817,7 +3817,7 @@ async fn test_lorawan_11_device_queue() {
         f_cnt_up: 8,
         n_f_cnt_down: 5,
         a_f_cnt_down: 3,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         rx1_delay: 1,
         region_config_id: "eu868".into(),
@@ -4297,7 +4297,7 @@ async fn test_lorawan_10_adr() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         rx1_delay: 1,
         region_config_id: "eu868".into(),
@@ -4375,7 +4375,7 @@ async fn test_lorawan_10_adr() {
                                         dr: 3,
                                         tx_power: 0,
                                         ch_mask: lrwn::ChMask::new([
-                                            true, true, true, false, false, false, false, false,
+                                            true, true, true, true, false, false, false, false,
                                             false, false, false, false, false, false, false, false,
                                         ]),
                                         redundancy: lrwn::Redundancy {
@@ -4388,7 +4388,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([57, 103, 222, 92]),
+                        mic: Some([149, 254, 5, 160]),
                     },
                     lrwn::PhyPayload {
                         mhdr: lrwn::MHDR {
@@ -4409,7 +4409,7 @@ async fn test_lorawan_10_adr() {
                                         dr: 3,
                                         tx_power: 0,
                                         ch_mask: lrwn::ChMask::new([
-                                            true, true, true, false, false, false, false, false,
+                                            true, true, true, true, false, false, false, false,
                                             false, false, false, false, false, false, false, false,
                                         ]),
                                         redundancy: lrwn::Redundancy {
@@ -4422,7 +4422,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([57, 103, 222, 92]),
+                        mic: Some([149, 254, 5, 160]),
                     },
                 ]),
             ],
@@ -4476,7 +4476,7 @@ async fn test_lorawan_10_adr() {
                                 dr: 0,
                                 tx_power: 3,
                                 ch_mask: lrwn::ChMask::new([
-                                    true, true, true, false, false, false, false, false, false,
+                                    true, true, true, true, false, false, false, false, false,
                                     false, false, false, false, false, false, false,
                                 ]),
                                 redundancy: lrwn::Redundancy {
@@ -4526,7 +4526,7 @@ async fn test_lorawan_10_adr() {
                 assert::tx_power_index(dev.dev_eui, 3),
                 assert::dr(dev.dev_eui, 0),
                 assert::nb_trans(dev.dev_eui, 1),
-                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2]),
+                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2, 3]),
             ],
         },
         Test {
@@ -4544,7 +4544,7 @@ async fn test_lorawan_10_adr() {
                                 dr: 0,
                                 tx_power: 3,
                                 ch_mask: lrwn::ChMask::new([
-                                    true, true, true, false, false, false, false, false, false,
+                                    true, true, true, true, false, false, false, false, false,
                                     false, false, false, false, false, false, false,
                                 ]),
                                 redundancy: lrwn::Redundancy {
@@ -4594,7 +4594,7 @@ async fn test_lorawan_10_adr() {
                 assert::tx_power_index(dev.dev_eui, 0),
                 assert::dr(dev.dev_eui, 0),
                 assert::nb_trans(dev.dev_eui, 0),
-                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2]),
+                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2, 3]),
             ],
         },
         Test {
@@ -4629,7 +4629,7 @@ async fn test_lorawan_10_adr() {
             assert: vec![
                 assert::f_cnt_up(dev.dev_eui, 11),
                 assert::n_f_cnt_down(dev.dev_eui, 5),
-                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2]),
+                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2, 3]),
                 assert::downlink_phy_payloads(vec![
                     lrwn::PhyPayload {
                         mhdr: lrwn::MHDR {
@@ -4719,8 +4719,10 @@ async fn test_lorawan_10_adr() {
                                 },
                                 f_opts: lrwn::MACCommandSet::new(vec![
                                     lrwn::MACCommand::LinkADRReq(lrwn::LinkADRReqPayload {
-                                        ch_mask: lrwn::ChMask::from_slice(&[true, true, true])
-                                            .unwrap(),
+                                        ch_mask: lrwn::ChMask::from_slice(&[
+                                            true, true, true, true,
+                                        ])
+                                        .unwrap(),
                                         dr: 0,
                                         tx_power: 0,
                                         redundancy: lrwn::Redundancy {
@@ -4733,7 +4735,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([0x8, 0xee, 0xdd, 0x34]),
+                        mic: Some([0xdf, 0xf1, 0x3c, 0x30]),
                     },
                     lrwn::PhyPayload {
                         mhdr: lrwn::MHDR {
@@ -4751,8 +4753,10 @@ async fn test_lorawan_10_adr() {
                                 },
                                 f_opts: lrwn::MACCommandSet::new(vec![
                                     lrwn::MACCommand::LinkADRReq(lrwn::LinkADRReqPayload {
-                                        ch_mask: lrwn::ChMask::from_slice(&[true, true, true])
-                                            .unwrap(),
+                                        ch_mask: lrwn::ChMask::from_slice(&[
+                                            true, true, true, true,
+                                        ])
+                                        .unwrap(),
                                         dr: 0,
                                         tx_power: 0,
                                         redundancy: lrwn::Redundancy {
@@ -4765,7 +4769,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([0x8, 0xee, 0xdd, 0x34]),
+                        mic: Some([0xdf, 0xf1, 0x3c, 0x30]),
                     },
                 ]),
                 assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2, 3, 4, 5, 6, 7]),
@@ -4786,7 +4790,7 @@ async fn test_lorawan_10_adr() {
                                 dr: 0,
                                 tx_power: 1,
                                 ch_mask: lrwn::ChMask::new([
-                                    true, true, true, false, false, false, false, false, false,
+                                    true, true, true, true, false, false, false, false, false,
                                     false, false, false, false, false, false, false,
                                 ]),
                                 redundancy: lrwn::Redundancy {
@@ -4834,7 +4838,7 @@ async fn test_lorawan_10_adr() {
                 assert::f_cnt_up(dev.dev_eui, 11),
                 assert::n_f_cnt_down(dev.dev_eui, 5),
                 assert::no_downlink_frame(),
-                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2]),
+                assert::enabled_uplink_channel_indices(dev.dev_eui, vec![0, 1, 2, 3]),
             ],
         },
         Test {
@@ -4852,7 +4856,7 @@ async fn test_lorawan_10_adr() {
                                 dr: 0,
                                 tx_power: 1,
                                 ch_mask: lrwn::ChMask::new([
-                                    true, true, true, false, false, false, false, false, false,
+                                    true, true, true, true, false, false, false, false, false,
                                     false, false, false, false, false, false, false,
                                 ]),
                                 redundancy: lrwn::Redundancy {
@@ -4954,8 +4958,10 @@ async fn test_lorawan_10_adr() {
                                     lrwn::MACCommand::LinkADRReq(lrwn::LinkADRReqPayload {
                                         dr: 3,
                                         tx_power: 0,
-                                        ch_mask: lrwn::ChMask::from_slice(&[true, true, true])
-                                            .unwrap(),
+                                        ch_mask: lrwn::ChMask::from_slice(&[
+                                            true, true, true, true,
+                                        ])
+                                        .unwrap(),
                                         redundancy: lrwn::Redundancy {
                                             ch_mask_cntl: 0,
                                             nb_rep: 1,
@@ -4966,7 +4972,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([57, 103, 222, 92]),
+                        mic: Some([149, 254, 5, 160]),
                     },
                     lrwn::PhyPayload {
                         mhdr: lrwn::MHDR {
@@ -4986,8 +4992,10 @@ async fn test_lorawan_10_adr() {
                                     lrwn::MACCommand::LinkADRReq(lrwn::LinkADRReqPayload {
                                         dr: 3,
                                         tx_power: 0,
-                                        ch_mask: lrwn::ChMask::from_slice(&[true, true, true])
-                                            .unwrap(),
+                                        ch_mask: lrwn::ChMask::from_slice(&[
+                                            true, true, true, true,
+                                        ])
+                                        .unwrap(),
                                         redundancy: lrwn::Redundancy {
                                             ch_mask_cntl: 0,
                                             nb_rep: 1,
@@ -4998,7 +5006,7 @@ async fn test_lorawan_10_adr() {
                             f_port: None,
                             frm_payload: None,
                         }),
-                        mic: Some([57, 103, 222, 92]),
+                        mic: Some([149, 254, 5, 160]),
                     },
                 ]),
             ],
@@ -5140,7 +5148,7 @@ async fn test_lorawan_10_device_status_request() {
         }),
         f_cnt_up: 8,
         n_f_cnt_down: 5,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         rx1_delay: 1,
         region_config_id: "eu868".into(),
@@ -5412,7 +5420,7 @@ async fn test_lorawan_11_receive_window_selection() {
         f_cnt_up: 8,
         n_f_cnt_down: 5,
         conf_f_cnt: 4,
-        enabled_uplink_channel_indices: vec![0, 1, 2],
+        enabled_uplink_channel_indices: vec![0, 1, 2, 3],
         rx2_frequency: 869525000,
         rx1_delay: 1,
         region_config_id: "eu868".into(),
